@@ -1,56 +1,15 @@
+import Navbar from "./components/navbar/navbar";
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
-      <header className="w-full max-w-4xl">
+      <header className="w-full max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8">
           Guía de Volatility3
         </h1>
 
-        <nav className="rounded-lg p-4">
-          <ul className="flex flex-wrap justify-center gap-6 text-sm sm:text-base">
-            <li>
-              <a 
-                href="/pages/instalacion" 
-                className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
-              >
-                Instalación
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/pages/ejemplos" 
-                className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
-              >
-                Ejemplos Prácticos
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/pages/comandos" 
-                className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
-              >
-                Comandos
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/pages/casos-estudio" 
-                className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
-              >
-                Casos de Estudio
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/pages/faq" 
-                className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
-              >
-                FAQ
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
       
       <main className="flex flex-col gap-[32px] items-center sm:items-start max-w-4xl">
