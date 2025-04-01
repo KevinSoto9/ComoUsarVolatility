@@ -2,18 +2,17 @@ import { CodeBlock } from "../shared/CodeBlock";
 
 export function WindowsInstalacion() {
   return (
-    <div className="flex flex-col gap-4 sm:gap-6 prose prose-slate max-w-none">
-      <h2 className="text-xl sm:text-2xl font-bold">
+    <div className="flex flex-col gap-6 sm:gap-8">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center sm:text-left">
         Instalación en Windows
       </h2>
 
-      <section className="space-y-3 sm:space-y-4">
-        <h3 className="text-lg sm:text-xl font-semibold">
+      <section className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
           Requisitos Previos
         </h3>
-        <p className="text-sm sm:text-base">
-          Antes de instalar Volatility 3 en Windows, asegúrate de cumplir
-          con los siguientes requisitos:
+        <p className="text-sm sm:text-base mb-4">
+          Antes de instalar Volatility 3 en Windows, asegúrate de tener:
         </p>
         <ul className="list-disc list-inside space-y-2 text-sm sm:text-base">
           <li>
@@ -28,111 +27,104 @@ export function WindowsInstalacion() {
         </ul>
       </section>
 
-      <h3 className="font-semibold text-xl mt-12">
-        1. Instalación de Python 3
-      </h3>
-      <p>
-        Volatility 3 está basado en Python, por lo que necesitarás tener
-        Python 3.8 o superior instalado en tu sistema. Aquí te explicamos
-        cómo hacerlo:
-      </p>
-      <ol className="list-decimal list-inside space-y-2">
-        <li>
-          Visita la página oficial de Python:{" "}
-          <a
-            href="https://www.python.org/downloads/"
-            className="text-blue-600"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            python.org/downloads
-          </a>
-          .
-        </li>
-        <li>
-          Descarga la versión más reciente de Python 3 para Windows.
-          Asegúrate de descargar la versión de 64 bits si tu sistema es de
-          64 bits.
-        </li>
-        <li>
-          Ejecuta el instalador descargado. Durante la instalación,
-          asegúrate de marcar la opción{" "}
-          <strong>&quot;Add Python to PATH&quot;</strong> antes de continuar. Esta
-          opción es crucial para que puedas ejecutar Python desde cualquier
-          ventana de comandos.
-        </li>
-        <li>
-          Finaliza la instalación siguiendo los pasos que se indican en el
-          instalador. Si es necesario, reinicia tu computadora después de la
-          instalación.
-        </li>
-      </ol>
-
-      <h3 className="font-semibold text-xl mt-12">
-        2. Verificación de la Instalación de Python
-      </h3>
-      <p>
-        Una vez instalado Python, es importante verificar que se haya
-        instalado correctamente. Para hacerlo:
-      </p>
-      <ol className="list-decimal list-inside space-y-2">
-        <li>
-          Abre la aplicación **CMD** (símbolo del sistema) o **PowerShell**.
-          Para abrir PowerShell, haz clic derecho sobre el botón de inicio
-          de Windows y selecciona &quot;Windows PowerShell&quot; o &quot;PowerShell&quot;
-          dependiendo de la versión.
-        </li>
-        <li>
-          En la ventana de comandos, escribe el siguiente comando y presiona
-          Enter:
-          <CodeBlock code="python --version" />
-          Si la instalación fue exitosa, deberías ver algo como:
-          <CodeBlock code="Python 3.x.x" />
-          (donde &quot;3.x.x&quot; es la versión que instalaste).
-        </li>
-        <li>
-          Si recibes un mensaje de error, asegúrate de haber seleccionado la
-          opción &quot;Add Python to PATH&quot; durante la instalación y reinicia el
-          sistema si es necesario.
-        </li>
-      </ol>
-
-      <section className="space-y-3 sm:space-y-4">
-        <h3 className="font-semibold text-xl mt-12">
-          3. Instalación de Volatility 3
+      <section className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
+          1. Instalación de Python 3
         </h3>
-        <p className="text-sm sm:text-base">
-          Una vez que tengas Python instalado, sigue estos pasos:
+        <p className="text-sm sm:text-base mb-4">
+          Volatility 3 está basado en Python, por lo que necesitarás tener Python 3.8 o superior instalado en tu sistema. Aquí te explicamos cómo hacerlo en Windows:
         </p>
         <ol className="list-decimal list-inside space-y-2 text-sm sm:text-base">
-          <li>Abre PowerShell como administrador</li>
           <li>
-            Ejecuta el siguiente comando:
-            <CodeBlock code="pip install volatility3" />
+            Abre tu navegador y ve a la página oficial de Python:{" "}
+            <a
+              href="https://www.python.org/downloads/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300"
+            >
+              https://www.python.org/downloads/
+            </a>
           </li>
           <li>
-            Verifica la instalación con:
-            <CodeBlock code="vol.py -h" />
+            Haz clic en el botón &quot;Download Python&quot; para descargar la última versión de Python 3.
+          </li>
+          <li>
+            Abre el instalador descargado y asegúrate de marcar la casilla &quot;Add Python to PATH&quot; antes de hacer clic en &quot;Install Now&quot;.
           </li>
         </ol>
       </section>
 
-      <section className="space-y-4">
-        <h3 className="text-xl font-semibold">Ejemplo de Uso</h3>
-        <p className="">Para analizar una imagen de memoria:</p>
-        <CodeBlock code="vol.py -f memoria.raw windows.info" />
-      </section>
-
-      <section className="space-y-4">
-        <h3 className="text-xl font-semibold">Resolución de Problemas</h3>
-        <ul className="list-disc list-inside space-y-2">
+      <section className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
+          2. Verificación de la Instalación de Python
+        </h3>
+        <p className="text-sm sm:text-base mb-4">
+          Una vez instalado Python, es importante verificar que se haya instalado correctamente. Para hacerlo:
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm sm:text-base">
           <li>
-            <strong>Error &quot;vol.py no se reconoce como un comando&quot;:</strong>{" "}
-            Verifica que Python esté en el PATH del sistema
+            Abre el CMD o PowerShell y escribe el siguiente comando para verificar la versión de Python instalada:
+            <div className="overflow-x-auto">
+              <CodeBlock code="python --version" />
+            </div>
           </li>
           <li>
-            <strong>Errores de permisos:</strong> Ejecuta PowerShell como
-            administrador
+            Si la instalación fue exitosa, deberías ver algo como:
+            <div className="overflow-x-auto">
+              <CodeBlock code="Python 3.x.x" />
+            </div>
+            (donde &quot;3.x.x&quot; es la versión que instalaste).
+          </li>
+          <li>
+            Si recibes un mensaje de error, asegúrate de que Python esté instalado correctamente y vuelve a intentarlo.
+          </li>
+        </ol>
+      </section>
+
+      <section className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
+          3. Instalación de Volatility 3
+        </h3>
+        <p className="text-sm sm:text-base mb-4">
+          Una vez que tengas Python instalado, sigue estos pasos:
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm sm:text-base">
+          <li>
+            Abre el CMD o PowerShell y asegúrate de tener privilegios de administrador.
+          </li>
+          <li>
+            Ejecuta el siguiente comando para instalar Volatility 3:
+            <div className="overflow-x-auto">
+              <CodeBlock code="pip install volatility3" />
+            </div>
+          </li>
+          <li>
+            Verifica la instalación ejecutando:
+            <div className="overflow-x-auto">
+              <CodeBlock code="vol.py -h" />
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4">Ejemplo de Uso</h3>
+        <p className="text-sm sm:text-base mb-4">Para analizar una imagen de memoria:</p>
+        <div className="overflow-x-auto">
+          <CodeBlock code="vol.py -f memoria.raw windows.info" />
+        </div>
+      </section>
+
+      <section className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4">Resolución de Problemas</h3>
+        <ul className="list-disc list-inside space-y-2 text-sm sm:text-base">
+          <li>
+            <strong>Error &quot;vol.py no se reconoce como un comando&quot;:</strong>{" "}
+            Verifica que Python esté en el PATH del sistema.
+          </li>
+          <li>
+            <strong>Errores de permisos:</strong> Ejecuta el CMD o PowerShell con privilegios de administrador.
           </li>
         </ul>
       </section>

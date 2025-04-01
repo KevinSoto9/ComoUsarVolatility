@@ -13,7 +13,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/"
-              className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+              className="hover:text-gray-400 transition-colors font-medium"
             >
               Inicio
             </Link>
@@ -22,7 +22,7 @@ export default function Navbar() {
         <li>
           <Link
             href="/pages/instalacion"
-            className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+            className="hover:text-gray-400 transition-colors font-medium"
           >
             Instalación
           </Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
         <li>
           <Link
             href="/pages/ejemplos"
-            className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+            className="hover:text-gray-400 transition-colors font-medium"
           >
             Ejemplos Prácticos
           </Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
         <li>
           <Link
             href="/pages/comandos"
-            className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+            className="hover:text-gray-400 transition-colors font-medium"
           >
             Comandos
           </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
         <li>
           <Link
             href="/pages/casos-estudio"
-            className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+            className="hover:text-gray-400 transition-colors font-medium"
           >
             Casos de Estudio
           </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
         <li>
           <Link
             href="/pages/faq"
-            className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+            className="hover:text-gray-400 transition-colors font-medium"
           >
             FAQ
           </Link>
