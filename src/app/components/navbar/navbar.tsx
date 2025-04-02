@@ -21,7 +21,7 @@ export default function Navbar() {
         )}
         <li>
           <Link
-            href="/pages/instalacion"
+            href="/instalacion"
             className="hover:text-gray-400 transition-colors font-medium"
           >
             Instalación
@@ -29,7 +29,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/pages/ejemplos"
+            href="/ejemplos"
             className="hover:text-gray-400 transition-colors font-medium"
           >
             Ejemplos Prácticos
@@ -37,7 +37,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/pages/comandos"
+            href="/comandos"
             className="hover:text-gray-400 transition-colors font-medium"
           >
             Comandos
@@ -45,7 +45,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/pages/casos-estudio"
+            href="/casos-estudio"
             className="hover:text-gray-400 transition-colors font-medium"
           >
             Casos de Estudio
@@ -53,7 +53,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/pages/faq"
+            href="/faq"
             className="hover:text-gray-400 transition-colors font-medium"
           >
             FAQ
